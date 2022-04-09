@@ -1,0 +1,36 @@
+Source: rust-target-lexicon
+Section: rust
+Priority: optional
+Build-Depends: debhelper (>= 12),
+ dh-cargo (>= 25),
+ cargo:native <!nocheck>,
+ rustc:native <!nocheck>,
+ libstd-rust-dev <!nocheck>
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Uploaders:
+ Wolfgang Silbermayr <wolfgang@silbermayr.at>
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/target-lexicon]
+Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/target-lexicon
+Rules-Requires-Root: no
+
+Package: librust-target-lexicon-dev
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends}
+Provides:
+ librust-target-lexicon+default-dev (= ${binary:Version}),
+ librust-target-lexicon+std-dev (= ${binary:Version}),
+ librust-target-lexicon-0-dev (= ${binary:Version}),
+ librust-target-lexicon-0+default-dev (= ${binary:Version}),
+ librust-target-lexicon-0+std-dev (= ${binary:Version}),
+ librust-target-lexicon-0.12-dev (= ${binary:Version}),
+ librust-target-lexicon-0.12+default-dev (= ${binary:Version}),
+ librust-target-lexicon-0.12+std-dev (= ${binary:Version}),
+ librust-target-lexicon-0.12.3-dev (= ${binary:Version}),
+ librust-target-lexicon-0.12.3+default-dev (= ${binary:Version}),
+ librust-target-lexicon-0.12.3+std-dev (= ${binary:Version})
+Description: Targeting utilities for compilers and related tools - Rust source code
+ This package contains the source for the Rust target-lexicon crate, packaged by
+ debcargo for use with cargo and dh-cargo.
