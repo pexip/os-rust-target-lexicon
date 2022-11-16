@@ -1,3 +1,9 @@
+rust-target-lexicon (0.12.3-1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Wed, 16 Nov 2022 21:24:45 +0000
+
 rust-target-lexicon (0.12.3-1) unstable; urgency=medium
 
   * Team upload.
